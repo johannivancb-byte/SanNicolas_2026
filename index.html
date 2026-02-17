@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - IE Nuevo Compartir San Nicolás</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">📚</div>
+                    <div>
+                        <h1 class="header-title">Horarios Escolares</h1>
+                        <p class="header-subtitle">IE Nuevo Compartir - San Nicolás</p>
+                    </div>
+                </div>
+                <div class="header-badge">
+                    Año 2026
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <h2 class="section-title">¿Qué deseas consultar?</h2>
+            
+            <div class="search-tabs">
+                <button class="tab-btn active" data-tab="curso">
+                    <span class="tab-icon">👥</span>
+                    <span class="tab-label">Por Curso</span>
+                </button>
+                <button class="tab-btn" data-tab="profesor">
+                    <span class="tab-icon">👨‍🏫</span>
+                    <span class="tab-label">Por Profesor</span>
+                </button>
+                <button class="tab-btn" data-tab="salon">
+                    <span class="tab-icon">🏫</span>
+                    <span class="tab-label">Por Salón</span>
+                </button>
+                <button class="tab-btn" data-tab="busqueda">
+                    <span class="tab-icon">🔍</span>
+                    <span class="tab-label">Búsqueda</span>
+                </button>
+                <button class="tab-btn" data-tab="reuniones">
+                    <span class="tab-icon">📋</span>
+                    <span class="tab-label">Reuniones de Área</span>
+                </button>
+                <button class="tab-btn" data-tab="atencion">
+                    <span class="tab-icon">👪</span>
+                    <span class="tab-label">Atención Acudientes</span>
+                </button>
+            </div>
+
+            <!-- Formularios de búsqueda -->
+            <div class="search-forms">
+                <!-- Búsqueda por Curso -->
+                <form id="form-curso" class="search-form active">
+                    <div class="form-group">
+                        <label for="select-curso">Selecciona un curso:</label>
+                        <select id="select-curso" class="form-select">
+                            <option value="">-- Selecciona un curso --</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Ver Horario</button>
+                </form>
+
+                <!-- Búsqueda por Profesor -->
+                <form id="form-profesor" class="search-form">
+                    <div class="form-group">
+                        <label for="select-profesor">Selecciona un profesor:</label>
+                        <select id="select-profesor" class="form-select">
+                            <option value="">-- Selecciona un profesor --</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Ver Horario</button>
+                </form>
+
+                <!-- Búsqueda por Salón -->
+                <form id="form-salon" class="search-form">
+                    <div class="form-group">
+                        <label for="select-salon">Selecciona un salón:</label>
+                        <select id="select-salon" class="form-select">
+                            <option value="">-- Selecciona un salón --</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Ver Horario</button>
+                </form>
+
+                <!-- Búsqueda Avanzada -->
+                <form id="form-busqueda" class="search-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="busqueda-dia">Día (opcional):</label>
+                            <select id="busqueda-dia" class="form-select">
+                                <option value="">Todos los días</option>
+                                <option value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="busqueda-hora">Hora (opcional):</label>
+                            <select id="busqueda-hora" class="form-select">
+                                <option value="">Todas las horas</option>
+                                <option value="1">1° (6:00-6:55)</option>
+                                <option value="2">2° (6:55-7:50)</option>
+                                <option value="3">3° (7:50-8:45)</option>
+                                <option value="4">4° (8:45-9:40)</option>
+                                <option value="5">5° (10:20-11:10)</option>
+                                <option value="6">6° (11:10-12:00)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="busqueda-curso-avanzada">Curso (opcional):</label>
+                            <select id="busqueda-curso-avanzada" class="form-select">
+                                <option value="">Todos los cursos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="busqueda-salon-avanzada">Salón (opcional):</label>
+                            <select id="busqueda-salon-avanzada" class="form-select">
+                                <option value="">Todos los salones</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Buscar</button>
+                </form>
+
+                <!-- Reuniones de Área -->
+                <form id="form-reuniones" class="search-form">
+                    <div class="form-group">
+                        <label for="reuniones-dia">Filtrar por día (opcional):</label>
+                        <select id="reuniones-dia" class="form-select">
+                            <option value="">Todos los días</option>
+                            <option value="Lunes">Lunes</option>
+                            <option value="Martes">Martes</option>
+                            <option value="Miércoles">Miércoles</option>
+                            <option value="Jueves">Jueves</option>
+                            <option value="Viernes">Viernes</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Ver Reuniones</button>
+                </form>
+
+                <!-- Atención a Acudientes -->
+                <form id="form-atencion" class="search-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="atencion-docente">Buscar docente (opcional):</label>
+                            <select id="atencion-docente" class="form-select">
+                                <option value="">Todos los docentes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="atencion-dia">Filtrar por día (opcional):</label>
+                            <select id="atencion-dia" class="form-select">
+                                <option value="">Todos los días</option>
+                                <option value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Ver Horarios</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h3 id="results-title" class="results-title"></h3>
+                <button id="btn-clear" class="btn-secondary">Nueva Búsqueda</button>
+            </div>
+            <div id="results-content" class="results-content"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 IE Nuevo Compartir - San Nicolás</p>
+            <p class="footer-small">Consulta de Horarios Escolares</p>
+        </footer>
+    </div>
+
+    <script src="horarios-data.js"></script>
+    <script src="reuniones-atencion-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
