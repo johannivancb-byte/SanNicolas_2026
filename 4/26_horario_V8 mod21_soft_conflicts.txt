@@ -1,0 +1,11 @@
+﻿Mostrar conflictos leves de 26_horario_V8 mod21.fet
+Generado con FET 7.7.7 el 26/3/26 16:39
+
+Número de restricciones leves incumplidas: 1
+Total de conflictos leves: 0.7
+
+Lista de conflictos leves en orden decreciente:
+
+La restricción de lugar, aula base para el profesor, incorrecta para la actividad con id 238, (    2/3 - LUIS ALEJANDRO PÉREZ RINCÓN - Matemáticas - Clase - 705). Esto incrementa el total de conflictos en un 0.7
+
+Fin de archivo.
