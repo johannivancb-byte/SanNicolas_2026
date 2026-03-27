@@ -1,7 +1,0 @@
-﻿La generación se inicio a las: 26/3/26 16:39
-
-La semilla aleatoria al inicio de la generación es:
-	s10=741252860, s11=3707249056, s12=1535136763,
-	s20=2744859586, s21=3767913097, s22=877211019.
-
-Este archivo fue automáticamente generado por FET 7.7.7.
