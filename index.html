@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios IENC — San Nicolás</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Horarios IENC — San Nicolás</h1>
+            <p>Jornada Mañana · 2026</p>
+        </header>
+
+        <nav class="tabs" id="tabs">
+            <button class="tab active" data-tab="docente">Docente</button>
+            <button class="tab" data-tab="curso">Curso</button>
+            <button class="tab" data-tab="salon">Salón</button>
+            <button class="tab" data-tab="reuniones">Reuniones</button>
+            <button class="tab" data-tab="atencion">At. Acudientes</button>
+            <button class="tab" data-tab="salones-base">Salones base</button>
+            <button class="tab" data-tab="disponibilidad">Disponibilidad</button>
+            <button class="tab" data-tab="general">Horario General</button>
+        </nav>
+
+        <div id="content"></div>
+    </div>
+
+    <script src="horarios-data.js"></script>
+    <script src="reuniones-atencion-data.js"></script>
+    <script src="horario-general-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
